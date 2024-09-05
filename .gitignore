@@ -1,0 +1,23 @@
+# 忽略文件
+*.pyc
+*.log
+*.prof
+*.rar
+*.png
+
+# 忽略目录
+model/
+
+dist/
+
+build/
+
+bak/
+
+test/
+
+tests/
+
+
+tj.py
+config.cfg
