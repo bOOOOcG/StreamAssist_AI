@@ -39,7 +39,7 @@ CORS(app, resources={
 # --- 依赖注入：在应用启动时，创建所有服务的单例 ---
 try:
     tokenizer = tiktoken.encoding_for_model(config.llm_tokenizer_model)
-except:
+except Exception:
     tokenizer = None
     logging.warning("Could not load tiktoken tokenizer!")
 
